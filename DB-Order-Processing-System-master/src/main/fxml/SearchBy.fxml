@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="471.0" prefWidth="714.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="714.0" style="-fx-background-color: #383838;">
+         <padding>
+            <Insets bottom="40" left="40" right="40" top="40" />
+         </padding>
+         <columnConstraints>
+            <ColumnConstraints maxWidth="115.60001220703126" minWidth="100.4" prefWidth="115.60001220703126" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="198.0" prefWidth="402.1999877929687" />
+            <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="129.39999999999998" />
+         </columnConstraints>
+         <children>
+            <Label text="Title" textFill="WHITE" />
+            <TextField fx:id="Title" onKeyReleased="#Has_value" prefHeight="33.0" prefWidth="447.0" promptText="Title" GridPane.columnIndex="1" />
+            <Label text="Author" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label text="Publisher" textFill="WHITE" GridPane.rowIndex="4" />
+            <TextField fx:id="Publisher" onKeyReleased="#Has_value" prefHeight="21.0" prefWidth="398.0" promptText="Publisher" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="17.0" prefWidth="106.0" text="Selling price" textFill="WHITE" GridPane.rowIndex="6" />
+            <TextField fx:id="SellingPrice" onKeyReleased="#priceCheckAction" prefHeight="40.0" promptText="Selling price" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Text fx:id="SellingPriceError" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="error: please enter number" visible="false" wrappingWidth="219.93670654296875" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Text fx:id="PublicationYearError" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="error: please enter number" visible="false" wrappingWidth="219.93670654296875" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <ComboBox fx:id="Category" onAction="#categoryCheckAction" prefHeight="31.0" prefWidth="447.0" promptText="Category" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button fx:id="OK" mnemonicParsing="false" onAction="#okAction" prefHeight="31.0" prefWidth="422.0" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <TextField fx:id="Author" onKeyReleased="#Has_value" prefHeight="28.0" prefWidth="398.0" promptText="Author" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <rowConstraints>
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.59998168945313" minHeight="33.60001831054686" prefHeight="35.20002441406248" vgrow="ALWAYS" />
+            <RowConstraints minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="64.79999389648438" minHeight="33.59998779296876" prefHeight="33.59998779296876" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

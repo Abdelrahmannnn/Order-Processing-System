@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="450.0" prefWidth="714.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="Previous" layoutX="220.0" layoutY="430.0" mnemonicParsing="false" onAction="#previousAction" prefHeight="26.0" prefWidth="87.0" text="Prevoius" />
+      <Line endX="14.600006103515625" endY="24.4000244140625" layoutX="342.0" layoutY="431.0" startX="14.600006103515625" startY="0.4000244140625" stroke="#c7baba" />
+      <Button fx:id="Next" layoutX="412.0" layoutY="430.0" mnemonicParsing="false" onAction="#nextAction" prefHeight="26.0" prefWidth="87.0" text="Next" />
+      <VBox prefHeight="400.0" prefWidth="714.0">
+         <children>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid0" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.9999877929687" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label0" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail0" mnemonicParsing="false" onAction="#detailAction" prefHeight="26.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add0" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line0" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid1" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label1" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail1" mnemonicParsing="false" onAction="#detailAction" prefHeight="26.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add1" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line1" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid2" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label2" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail2" mnemonicParsing="false" onAction="#detailAction" prefHeight="0.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add2" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line2" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid3" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label3" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail3" mnemonicParsing="false" onAction="#detailAction" prefHeight="0.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add3" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line3" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid4" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label4" prefHeight="18.0" prefWidth="310.0" />
+                  <Button fx:id="Detail4" mnemonicParsing="false" onAction="#detailAction" prefHeight="0.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add4" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="738.0" />
+            <Line fx:id="Line4" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid5" prefHeight="21.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label5" prefHeight="18.0" prefWidth="292.0" />
+                  <Button fx:id="Detail5" mnemonicParsing="false" onAction="#detailAction" prefHeight="5.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add5" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line5" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid6" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label6" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail6" mnemonicParsing="false" onAction="#detailAction" prefHeight="0.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add6" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line6" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid7" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label7" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail7" mnemonicParsing="false" onAction="#detailAction" prefHeight="8.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add7" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line7" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid8" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label8" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail8" mnemonicParsing="false" onAction="#detailAction" prefHeight="0.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add8" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line8" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <GridPane fx:id="Grid9" prefHeight="30.0" prefWidth="714.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="Label9" prefHeight="18.0" prefWidth="240.0" />
+                  <Button fx:id="Detail9" mnemonicParsing="false" onAction="#detailAction" prefHeight="0.0" prefWidth="87.0" text="Details" GridPane.columnIndex="1" />
+                  <Button fx:id="Add9" mnemonicParsing="false" onAction="#addRemoveAction" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="20.0" prefWidth="655.0" />
+            <Line fx:id="Line9" endX="610.0" startX="-100.0" stroke="#c7baba" visible="false" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
